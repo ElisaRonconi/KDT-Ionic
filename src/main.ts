@@ -4,6 +4,21 @@ import { IonicRouteStrategy, provideIonicAngular } from '@ionic/angular/standalo
 
 import { routes } from './app/app.routes';
 import { AppComponent } from './app/app.component';
+import { addIcons } from 'ionicons';
+import { homeOutline, newspaperOutline, cubeOutline,notificationsOutline, exitOutline, 
+  locationOutline,rocketOutline } from 'ionicons/icons';
+
+addIcons({
+  'home-outline': homeOutline,
+  'newspaper-outline': newspaperOutline,
+  'cube-outline': cubeOutline,
+  'notifications-outline': notificationsOutline,
+  'location-outline': locationOutline,
+  'exit-outline': exitOutline,
+  'rocket-outline': rocketOutline
+});
+
+
 
 bootstrapApplication(AppComponent, {
   providers: [
@@ -12,3 +27,4 @@ bootstrapApplication(AppComponent, {
     provideRouter(routes, withPreloading(PreloadAllModules)),
   ],
 });
+
